@@ -1,0 +1,217 @@
+[2026-08-05 16:05:54] [ERR] [] /api/Auth/Login -> Error while logging in.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'sp_Login' expects parameter '@Password', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 26
+   at EmployeeManagementApi.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\AuthController.cs:line 26
+ClientConnectionId:dd6ba1f7-a44c-465e-88c9-e672956c4394
+Error Number:201,State:4,Class:16
+[2026-08-05 16:05:54] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 873.7124 ms
+[2026-08-05 16:06:26] [ERR] [] /api/Auth/Login -> Error while logging in.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'sp_Login' expects parameter '@Password', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 26
+   at EmployeeManagementApi.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\AuthController.cs:line 26
+ClientConnectionId:dd6ba1f7-a44c-465e-88c9-e672956c4394
+Error Number:201,State:4,Class:16
+[2026-08-05 16:06:26] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 46.1779 ms
+[2026-08-05 16:06:31] [ERR] [] /api/Auth/Login -> Error while logging in.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'sp_Login' expects parameter '@Password', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 26
+   at EmployeeManagementApi.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\AuthController.cs:line 26
+ClientConnectionId:dd6ba1f7-a44c-465e-88c9-e672956c4394
+Error Number:201,State:4,Class:16
+[2026-08-05 16:06:31] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 36.3284 ms
+[2026-08-05 16:06:32] [ERR] [] /api/Auth/Login -> Error while logging in.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'sp_Login' expects parameter '@Password', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 26
+   at EmployeeManagementApi.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\AuthController.cs:line 26
+ClientConnectionId:dd6ba1f7-a44c-465e-88c9-e672956c4394
+Error Number:201,State:4,Class:16
+[2026-08-05 16:06:32] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 36.4763 ms
+[2026-08-05 16:06:56] [ERR] [] /api/Auth/Login -> Error while logging in.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'sp_Login' expects parameter '@Password', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 26
+   at EmployeeManagementApi.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\AuthController.cs:line 26
+ClientConnectionId:dd6ba1f7-a44c-465e-88c9-e672956c4394
+Error Number:201,State:4,Class:16
+[2026-08-05 16:06:56] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 36.4997 ms
+[2026-08-05 16:09:19] [ERR] [] /api/Auth/Login -> Error while logging in.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'sp_Login' expects parameter '@Password', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 26
+   at EmployeeManagementApi.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\AuthController.cs:line 26
+ClientConnectionId:f8d5fa5d-b9a6-4cd5-b321-3b0f1c85e7f2
+Error Number:201,State:4,Class:16
+[2026-08-05 16:09:19] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 5832.5768 ms
+[2026-08-05 16:09:32] [ERR] [] /api/Auth/Login -> Error while logging in.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'sp_Login' expects parameter '@Password', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 26
+   at EmployeeManagementApi.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\AuthController.cs:line 26
+ClientConnectionId:f8d5fa5d-b9a6-4cd5-b321-3b0f1c85e7f2
+Error Number:201,State:4,Class:16
+[2026-08-05 16:09:32] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 3992.2114 ms
+[2026-08-05 16:09:54] [ERR] [] /api/Auth/Login -> Error while logging in.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'sp_Login' expects parameter '@Password', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 26
+   at EmployeeManagementApi.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\AuthController.cs:line 26
+ClientConnectionId:f8d5fa5d-b9a6-4cd5-b321-3b0f1c85e7f2
+Error Number:201,State:4,Class:16
+[2026-08-05 16:09:54] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 9400.0038 ms
+[2026-08-05 16:10:46] [ERR] [] /api/Auth/Login -> Error while logging in.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'sp_Login' expects parameter '@Password', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 26
+   at EmployeeManagementApi.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\AuthController.cs:line 26
+ClientConnectionId:85bc87a1-afa9-4560-baa8-eb90026c13b5
+Error Number:201,State:4,Class:16
+[2026-08-05 16:10:46] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 430.8220 ms
+[2026-08-05 16:13:27] [ERR] [] /api/Auth/Login -> Error while logging in.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'sp_Login' expects parameter '@Password', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 26
+   at EmployeeManagementApi.Controllers.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Controllers\AuthController.cs:line 26
+ClientConnectionId:c5bef0e1-23c3-4608-bfe0-cf5c1d0a4c5b
+Error Number:201,State:4,Class:16
+[2026-08-05 16:13:27] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 586.2010 ms
+[2026-08-05 16:16:09] [ERR] [] /api/Auth/Login -> Error while logging in.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'sp_Login' expects parameter '@Password', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 26
+   at EmployeeManagementApi.Controllers.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Controllers\AuthController.cs:line 26
+ClientConnectionId:6e86cbda-6fe9-4987-849b-2ec50cbf03c9
+Error Number:201,State:4,Class:16
+[2026-08-05 16:16:09] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 464.2743 ms
+[2026-08-05 16:40:53] [ERR] [] /api/Auth/Login -> Error while logging in.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'sp_Login' expects parameter '@Password', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 26
+   at EmployeeManagementApi.Controllers.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Controllers\AuthController.cs:line 26
+ClientConnectionId:cd379f13-cd6e-40c9-9dc6-14acfd94a492
+Error Number:201,State:4,Class:16
+[2026-08-05 16:40:53] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 454.4412 ms
+[2026-08-05 18:49:40] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-05 18:49:54] [ERR] [] /api/Auth/Login -> Error while logging in.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 37
+   at EmployeeManagementApi.Controllers.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Controllers\AuthController.cs:line 26
+[2026-08-05 18:49:54] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 125.0505 ms
+[2026-08-05 18:50:10] [ERR] [] /api/Auth/Login -> Error while logging in.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 37
+   at EmployeeManagementApi.Controllers.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Controllers\AuthController.cs:line 26
+[2026-08-05 18:50:10] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 40.8112 ms
+[2026-08-05 18:50:31] [ERR] [] /api/Auth/Login -> Error while logging in.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 37
+   at EmployeeManagementApi.Controllers.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Controllers\AuthController.cs:line 26
+[2026-08-05 18:50:31] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 30.7391 ms
+[2026-08-05 18:52:48] [ERR] [] /api/Auth/Login -> Error while logging in.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 37
+   at EmployeeManagementApi.Controllers.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Controllers\AuthController.cs:line 26
+[2026-08-05 18:52:48] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 493.5401 ms

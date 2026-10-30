@@ -1,0 +1,3 @@
+[2026-07-29 17:01:39] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 874.5979 ms
+[2026-07-29 17:59:06] [INF] [GET] /api/Employees -> HTTP GET /api/Employees responded 200 in 99111.3978 ms
+[2026-07-29 18:52:31] [WRN] [] /api/Employees/-2 -> Invalid ID provided: -2

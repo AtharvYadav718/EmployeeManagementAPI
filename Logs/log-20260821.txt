@@ -1,0 +1,14 @@
+[2026-08-21 12:53:04] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-21 14:22:35] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-21 14:23:49] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-21 14:24:33] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-21 14:24:46] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-21 14:25:18] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-21 14:33:15] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-21 14:33:50] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-21 14:55:10] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-21 14:59:13] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-21 14:59:19] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-21 15:12:48] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-21 15:22:30] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-21 15:22:48] [WRN] [] /api/Auth/Login -> Login failed for user: atharv

@@ -1,0 +1,6 @@
+[2026-10-12 12:37:36] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-10-12 12:37:45] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-10-12 12:40:10] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-10-12 12:40:32] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-10-12 12:40:46] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-10-12 12:41:02] [WRN] [] /api/Auth/Login -> Login failed for user: atharv

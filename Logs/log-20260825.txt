@@ -1,0 +1,21 @@
+[2026-08-25 16:21:06] [ERR] [] /api/Auth/Register -> Error while registering user sneha.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__tblUser__C9F284562142E46F'. Cannot insert duplicate key in object 'dbo.tblUser'. The duplicate key value is (sneha).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 663
+   at EmployeeManagementApi.Repositories.AuthRepository.RegisterAsync(RegisterRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Repositories\AuthRepository.cs:line 41
+   at EmployeeManagementApi.Controllers.AuthController.Register(RegisterRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Controllers\AuthController.cs:line 27
+ClientConnectionId:b987f211-ce34-40b1-a037-7915f76c03d0
+Error Number:2627,State:1,Class:14
+[2026-08-25 16:21:06] [ERR] [POST] /api/Auth/Register -> HTTP POST /api/Auth/Register responded 500 in 270.7589 ms

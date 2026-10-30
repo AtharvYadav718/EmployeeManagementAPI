@@ -1,0 +1,61 @@
+[2026-08-28 10:25:15] [WRN] [] /api/Auth/Login -> Slow API | Method: POST | Path: /api/Auth/Login | Status: 200 | Time: 1051 ms
+[2026-08-28 10:25:37] [WRN] [] /api/Employees/EmployeeAndDepartmentData -> Slow API | Method: GET | Path: /api/Employees/EmployeeAndDepartmentData | Status: 200 | Time: 126 ms
+[2026-08-28 10:25:49] [WRN] [] /api/Employees -> Slow API | Method: GET | Path: /api/Employees | Status: 200 | Time: 61 ms
+[2026-08-28 10:26:45] [WRN] [] /api/Employees -> Slow API | Method: POST | Path: /api/Employees | Status: 400 | Time: 43 ms
+[2026-08-28 10:28:04] [WRN] [] /api/Employees -> Slow API | Method: POST | Path: /api/Employees | Status: 201 | Time: 103 ms
+[2026-08-28 10:28:31] [WRN] [] /api/Employees/1 -> Slow API | Method: GET | Path: /api/Employees/1 | Status: 200 | Time: 14 ms
+[2026-08-28 10:29:25] [WRN] [] /api/Employees/17 -> Slow API | Method: PUT | Path: /api/Employees/17 | Status: 200 | Time: 38 ms
+[2026-08-28 10:29:35] [WRN] [] /api/Employees/17 -> Delete failed: Employee ID 17 not found.
+[2026-08-28 10:29:35] [WRN] [] /api/Employees/17 -> Slow API | Method: DELETE | Path: /api/Employees/17 | Status: 404 | Time: 24 ms
+[2026-08-28 10:29:51] [WRN] [] /api/Employees/EmployeeDetailswithJoin -> Slow API | Method: GET | Path: /api/Employees/EmployeeDetailswithJoin | Status: 200 | Time: 15 ms
+[2026-08-28 10:30:15] [WRN] [] /api/Employees/EmployeeAndDepartmentData -> Slow API | Method: GET | Path: /api/Employees/EmployeeAndDepartmentData | Status: 200 | Time: 5 ms
+[2026-08-28 12:08:58] [WRN] [] /api/Auth/Login -> Slow API | Method: POST | Path: /api/Auth/Login | Status: 200 | Time: 995 ms
+[2026-08-28 12:10:44] [WRN] [] /api/Auth/Register -> Slow API | Method: POST | Path: /api/Auth/Register | Status: 201 | Time: 376 ms
+[2026-08-28 12:11:40] [WRN] [] /api/Auth/Register -> Slow API | Method: POST | Path: /api/Auth/Register | Status: 401 | Time: 11 ms
+[2026-08-28 12:11:44] [WRN] [] /api/Auth/Register -> Slow API | Method: POST | Path: /api/Auth/Register | Status: 401 | Time: 1 ms
+[2026-08-28 12:18:30] [WRN] [] /api/Auth/Login -> Slow API | Method: POST | Path: /api/Auth/Login | Status: 200 | Time: 148 ms
+[2026-08-28 12:19:03] [WRN] [] /api/Auth/Register -> Slow API | Method: POST | Path: /api/Auth/Register | Status: 403 | Time: 5 ms
+[2026-08-28 12:19:20] [WRN] [] /api/Employees/EmployeeAndDepartmentData -> Slow API | Method: GET | Path: /api/Employees/EmployeeAndDepartmentData | Status: 200 | Time: 44 ms
+[2026-08-28 12:19:29] [WRN] [] /api/Employees -> Slow API | Method: GET | Path: /api/Employees | Status: 200 | Time: 17 ms
+[2026-08-28 12:46:18] [WRN] [] /api/Employees/20 -> Delete failed: Employee ID 20 not found.
+[2026-08-28 14:46:54] [ERR] [GET] /api/Auth/TestException -> HTTP GET /api/Auth/TestException responded 500 in 7328.9401 ms
+System.Exception: Testing ExceptionHandlingMiddleware
+   at EmployeeManagementApi.Controllers.AuthController.TestException() in C:\Users\hp\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Controllers\AuthController.cs:line 26
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EmployeeManagementApi.Middleware.SlowApiMiddleware.InvokeAsync(HttpContext context) in C:\Users\hp\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Middleware\SlowApiMiddleware.cs:line 22
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-08-28 14:46:54] [ERR] [] /api/Auth/TestException -> Unhandled exception occurred while processing GET /api/Auth/TestException
+System.Exception: Testing ExceptionHandlingMiddleware
+   at EmployeeManagementApi.Controllers.AuthController.TestException() in C:\Users\hp\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Controllers\AuthController.cs:line 26
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EmployeeManagementApi.Middleware.SlowApiMiddleware.InvokeAsync(HttpContext context) in C:\Users\hp\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Middleware\SlowApiMiddleware.cs:line 22
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at EmployeeManagementApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\hp\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Middleware\ExceptionHandlingMiddleware.cs:line 22

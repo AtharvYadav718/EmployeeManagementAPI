@@ -1,0 +1,31 @@
+[2026-07-17 12:35:55] [ERR] [] /api/Employees/EmployeeAndDepartmentData ->  Error while fetching data from the database.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'Sp_GetEmployeeAndDepartmentData'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1043
+   at EmployeeManagementApi.Repositories.EmployeeRepository.GetEmployeeAndDepartmentDataAsync() in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\EmployeeRepository.cs:line 84
+   at EmployeeManagementApi.Controllers.EmployeesController.GetEmployeeAndDepartmentData() in C:\Users\hp\Downloads\EmployeeManagementApi\Controllers\EmployeesController.cs:line 25
+ClientConnectionId:2fcc724d-c152-43a8-8984-178a46aeea7d
+Error Number:2812,State:62,Class:16
+[2026-07-17 12:35:55] [ERR] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 500 in 958.8645 ms
+[2026-07-17 12:36:56] [ERR] [] /api/Employees/EmployeeAndDepartmentData ->  Error while fetching data from the database.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'Sp_GetEmployeeAndDepartmentData'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1043
+   at EmployeeManagementApi.Repositories.EmployeeRepository.GetEmployeeAndDepartmentDataAsync() in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\EmployeeRepository.cs:line 84
+   at EmployeeManagementApi.Controllers.EmployeesController.GetEmployeeAndDepartmentData() in C:\Users\hp\Downloads\EmployeeManagementApi\Controllers\EmployeesController.cs:line 25
+ClientConnectionId:8385f769-d87d-4d33-8dbb-96bab1ae7e76
+Error Number:2812,State:62,Class:16
+[2026-07-17 12:36:56] [ERR] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 500 in 495.6095 ms
+[2026-07-17 12:38:32] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 615.6072 ms

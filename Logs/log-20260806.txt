@@ -1,0 +1,31 @@
+[2026-08-06 10:53:38] [ERR] [] /api/Auth/Login -> Error while logging in.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\AuthRepository.cs:line 37
+   at EmployeeManagementApi.Controllers.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi\Controllers\AuthController.cs:line 26
+[2026-08-06 10:53:38] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 1359.3809 ms
+[2026-08-06 12:26:10] [WRN] [] /api/Employees/1 -> ID mismatch. URL ID: 1 
+[2026-08-06 12:26:55] [ERR] [] /api/Employees/1 -> Database update failed for ID: 1
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'sp_UpdateEmployee' expects parameter '@Department', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 663
+   at EmployeeManagementApi.Repositories.EmployeeRepository.UpdateEmployeeAsync(Employee employee) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\EmployeeRepository.cs:line 61
+   at EmployeeManagementApi.Controllers.EmployeesController.Update(Int32 id, Employee employee) in C:\Users\hp\Downloads\EmployeeManagementApi\Controllers\EmployeesController.cs:line 141
+ClientConnectionId:02f8791d-67e1-40c6-b20e-a33a89956696
+Error Number:201,State:4,Class:16
+[2026-08-06 12:26:55] [ERR] [PUT] /api/Employees/1 -> HTTP PUT /api/Employees/1 responded 500 in 155.5015 ms
+[2026-08-06 17:50:13] [WRN] [] /api/Employees/17 -> Employee record not found for ID: 17

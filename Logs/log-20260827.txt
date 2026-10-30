@@ -1,0 +1,4 @@
+[2026-08-27 17:29:59] [WRN] [] /api/Employees -> Slow API | Method: GET | Path: /api/Employees | Status: 401 | Time: 83 ms
+[2026-08-27 18:35:11] [WRN] [] /api/Auth/Register -> Slow API | Method: POST | Path: /api/Auth/Register | Status: 201 | Time: 811 ms
+[2026-08-27 18:36:10] [WRN] [] /api/Auth/Login -> Slow API | Method: POST | Path: /api/Auth/Login | Status: 200 | Time: 220 ms
+[2026-08-27 18:45:31] [WRN] [] /api/Auth/Login -> Slow API | Method: POST | Path: /api/Auth/Login | Status: 200 | Time: 186 ms

@@ -1,0 +1,41 @@
+[2026-08-24 10:48:42] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-24 10:49:31] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-24 12:46:42] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-24 15:26:00] [WRN] [] /api/Auth/Register -> User registration failed for atharv.
+[2026-08-24 15:39:41] [WRN] [] /api/Auth/Register -> User registration failed for amit.
+[2026-08-24 16:00:04] [WRN] [] /api/Auth/Register -> User registration failed for atharv.
+[2026-08-24 18:14:22] [WRN] [] /api/Auth/Login -> Login failed for user: priya
+[2026-08-24 18:16:03] [WRN] [] /api/Auth/Login -> Login failed for user: priya
+[2026-08-24 18:16:35] [WRN] [] /api/Auth/Login -> Login failed for user: priya
+[2026-08-24 18:18:03] [WRN] [] /api/Auth/Login -> Login failed for user: priya
+[2026-08-24 18:18:23] [WRN] [] /api/Auth/Login -> Login failed for user: atharv
+[2026-08-24 18:27:14] [ERR] [] /api/Auth/Login -> Error while logging in.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function sp_Login has too many arguments specified.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Repositories\AuthRepository.cs:line 55
+   at EmployeeManagementApi.Controllers.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Controllers\AuthController.cs:line 73
+ClientConnectionId:1bf97b14-b3d0-4d28-825f-0b6844cfb632
+Error Number:8144,State:2,Class:16
+[2026-08-24 18:27:15] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 829.8830 ms
+[2026-08-24 18:27:57] [ERR] [] /api/Auth/Login -> Error while logging in.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function sp_Login has too many arguments specified.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at EmployeeManagementApi.Repositories.AuthRepository.LoginAsync(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Repositories\AuthRepository.cs:line 55
+   at EmployeeManagementApi.Controllers.AuthController.Login(LoginRequest request) in C:\Users\hp\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Controllers\AuthController.cs:line 73
+ClientConnectionId:1bf97b14-b3d0-4d28-825f-0b6844cfb632
+Error Number:8144,State:2,Class:16
+[2026-08-24 18:27:57] [ERR] [POST] /api/Auth/Login -> HTTP POST /api/Auth/Login responded 500 in 43.5070 ms

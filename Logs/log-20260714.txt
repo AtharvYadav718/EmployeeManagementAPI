@@ -1,0 +1,13 @@
+[2026-07-14 18:01:14] [WRN] No employees found in the database.
+[2026-07-14 18:11:59] [WRN] No employees found in the database.
+[2026-07-14 18:15:31] [WRN] Employee record not found for ID: 5
+[2026-07-14 18:18:40] [WRN] Employee record not found for ID: 5
+[2026-07-14 18:32:50] [WRN] No employees found in the database.
+[2026-07-14 18:36:58] [WRN] [] /api/Employees -> No employees found in the database.
+[2026-07-14 18:37:54] [WRN] [] /api/Employees/5 -> Employee record not found for ID: 5
+[2026-07-14 18:38:06] [WRN] [] /api/Employees -> No employees found in the database.
+[2026-07-14 18:43:34] [WRN] [] /api/Employees -> No employees found in the database.
+[2026-07-14 18:57:44] [WRN] [] /api/Employees -> No employees found in the database.
+[2026-07-14 18:57:44] [INF] [GET] /api/Employees -> HTTP GET /api/Employees responded 200 in 540.4332 ms
+[2026-07-14 18:58:30] [WRN] [] /api/Employees/5 -> Employee record not found for ID: 5
+[2026-07-14 18:58:30] [INF] [GET] /api/Employees/5 -> HTTP GET /api/Employees/5 responded 404 in 423.4477 ms

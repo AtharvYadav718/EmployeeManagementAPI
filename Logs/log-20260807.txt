@@ -1,0 +1,3 @@
+[2026-08-07 10:21:42] [WRN] [] /api/Auth/Login -> Login failed for user: admin
+[2026-08-07 12:01:52] [WRN] [] /api/Auth/Login -> Login failed for user: string
+[2026-08-07 12:04:06] [WRN] [] /api/Employees/1012 -> Delete failed: Employee ID 1012 not found.

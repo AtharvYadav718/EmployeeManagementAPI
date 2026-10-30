@@ -1,0 +1,6 @@
+[2026-09-10 16:29:00] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 200 | Time: 1443 ms
+[2026-09-10 16:29:20] [WRN] Slow API | Method: GET | Path: /api/Employees | Status: 200 | Time: 210 ms
+[2026-09-10 16:29:45] [WRN] Slow API | Method: GET | Path: /api/Employees/5 | Status: 200 | Time: 43 ms
+[2026-09-10 16:30:00] [WRN] Slow API | Method: GET | Path: /api/Employees/EmployeeAndDepartmentData | Status: 200 | Time: 129 ms
+[2026-09-10 16:30:15] [WRN] Slow API | Method: GET | Path: /api/Employees/EmployeeDetailswithJoin | Status: 200 | Time: 25 ms
+[2026-09-10 16:30:43] [WRN] Slow API | Method: GET | Path: /api/Employees/DepartmentWiseData | Status: 200 | Time: 25 ms

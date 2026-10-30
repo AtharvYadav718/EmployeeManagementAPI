@@ -1,0 +1,95 @@
+[2026-07-28 10:06:18] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 1237.9175 ms
+[2026-07-28 10:22:11] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 568.8329 ms
+[2026-07-28 10:23:37] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 10.8934 ms
+[2026-07-28 10:31:19] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 611.0203 ms
+[2026-07-28 10:56:17] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 886.1385 ms
+[2026-07-28 10:59:17] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 26.3655 ms
+[2026-07-28 12:50:49] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 742.8621 ms
+[2026-07-28 12:51:00] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 16.1448 ms
+[2026-07-28 13:01:10] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 455.6404 ms
+[2026-07-28 14:19:51] [WRN] [] /api/Employees/-2 -> Invalid ID provided: -2
+[2026-07-28 14:19:51] [INF] [GET] /api/Employees/-2 -> HTTP GET /api/Employees/-2 responded 400 in 139.3114 ms
+[2026-07-28 14:32:35] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 756.4759 ms
+[2026-07-28 14:36:36] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 770.5318 ms
+[2026-07-28 14:40:42] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 18.2388 ms
+[2026-07-28 14:42:22] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 462.6556 ms
+[2026-07-28 14:45:03] [ERR] [] /api/Employees -> Error while fetching employees.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Department'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at EmployeeManagementApi.Repositories.EmployeeRepository.GetAllEmployeesAsync() in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\EmployeeRepository.cs:line 24
+   at EmployeeManagementApi.Controllers.EmployeesController.GetAllEmployees() in C:\Users\hp\Downloads\EmployeeManagementApi\Controllers\EmployeesController.cs:line 46
+ClientConnectionId:677ea992-d6a9-461b-86f7-4939dd775e02
+Error Number:207,State:1,Class:16
+[2026-07-28 14:45:03] [ERR] [GET] /api/Employees -> HTTP GET /api/Employees responded 500 in 173.6961 ms
+[2026-07-28 14:45:09] [ERR] [] /api/Employees -> Error while fetching employees.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Department'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at EmployeeManagementApi.Repositories.EmployeeRepository.GetAllEmployeesAsync() in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\EmployeeRepository.cs:line 24
+   at EmployeeManagementApi.Controllers.EmployeesController.GetAllEmployees() in C:\Users\hp\Downloads\EmployeeManagementApi\Controllers\EmployeesController.cs:line 46
+ClientConnectionId:677ea992-d6a9-461b-86f7-4939dd775e02
+Error Number:207,State:1,Class:16
+[2026-07-28 14:45:09] [ERR] [GET] /api/Employees -> HTTP GET /api/Employees responded 500 in 52.1532 ms
+[2026-07-28 14:45:22] [ERR] [] /api/Employees/1 -> An internal server error occurred.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Department'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at EmployeeManagementApi.Repositories.EmployeeRepository.GetEmployeeByIdAsync(Int32 id) in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\EmployeeRepository.cs:line 35
+   at EmployeeManagementApi.Controllers.EmployeesController.GetEmployeeById(Int32 id) in C:\Users\hp\Downloads\EmployeeManagementApi\Controllers\EmployeesController.cs:line 75
+ClientConnectionId:677ea992-d6a9-461b-86f7-4939dd775e02
+Error Number:207,State:1,Class:16
+[2026-07-28 14:45:22] [ERR] [GET] /api/Employees/1 -> HTTP GET /api/Employees/1 responded 500 in 102.5893 ms
+[2026-07-28 14:48:50] [ERR] [] /api/Employees -> Error while fetching employees.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Department'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at EmployeeManagementApi.Repositories.EmployeeRepository.GetAllEmployeesAsync() in C:\Users\hp\Downloads\EmployeeManagementApi\Repositories\EmployeeRepository.cs:line 24
+   at EmployeeManagementApi.Controllers.EmployeesController.GetAllEmployees() in C:\Users\hp\Downloads\EmployeeManagementApi\Controllers\EmployeesController.cs:line 46
+ClientConnectionId:4d537907-d7f1-43c6-88c8-b0a6f2ea6c91
+Error Number:207,State:1,Class:16
+[2026-07-28 14:48:51] [ERR] [GET] /api/Employees -> HTTP GET /api/Employees responded 500 in 504.1903 ms
+[2026-07-28 14:50:49] [INF] [GET] /api/Employees -> HTTP GET /api/Employees responded 200 in 445.3825 ms
+[2026-07-28 14:50:57] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 53.4155 ms
+[2026-07-28 14:51:07] [INF] [GET] /api/Employees -> HTTP GET /api/Employees responded 200 in 6.5915 ms
+[2026-07-28 14:52:22] [INF] [POST] /api/Employees -> HTTP POST /api/Employees responded 201 in 182.0717 ms
+[2026-07-28 14:52:41] [INF] [GET] /api/Employees -> HTTP GET /api/Employees responded 200 in 5.9780 ms
+[2026-07-28 14:58:07] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 487.6845 ms
+[2026-07-28 14:58:22] [INF] [GET] /api/Employees -> HTTP GET /api/Employees responded 200 in 32.0007 ms
+[2026-07-28 14:59:15] [INF] [POST] /api/Employees -> HTTP POST /api/Employees responded 201 in 131.4156 ms
+[2026-07-28 14:59:28] [INF] [GET] /api/Employees -> HTTP GET /api/Employees responded 200 in 5.9147 ms
+[2026-07-28 14:59:29] [INF] [GET] /api/Employees -> HTTP GET /api/Employees responded 200 in 5.1987 ms
+[2026-07-28 15:00:17] [INF] [GET] /api/Employees/10 -> HTTP GET /api/Employees/10 responded 200 in 45.0536 ms
+[2026-07-28 15:00:38] [WRN] [] /api/Employees/10 -> ID mismatch. URL ID: 10 
+[2026-07-28 15:00:38] [INF] [PUT] /api/Employees/10 -> HTTP PUT /api/Employees/10 responded 400 in 32.4423 ms
+[2026-07-28 15:34:24] [INF] [GET] /api/Employees/EmployeeAndDepartmentData -> HTTP GET /api/Employees/EmployeeAndDepartmentData responded 200 in 374.0815 ms
+[2026-07-28 16:46:29] [INF] [GET] /api/Employees -> HTTP GET /api/Employees responded 200 in 529.0957 ms
+[2026-07-28 16:47:20] [INF] [POST] /api/Employees -> HTTP POST /api/Employees responded 201 in 106.7690 ms
+[2026-07-28 16:47:27] [INF] [GET] /api/Employees -> HTTP GET /api/Employees responded 200 in 5.0910 ms
+[2026-07-28 16:52:16] [INF] [GET] /api/Employees -> HTTP GET /api/Employees responded 200 in 338.3235 ms
+[2026-07-28 16:53:02] [INF] [POST] /api/Employees -> HTTP POST /api/Employees responded 201 in 100.1223 ms
+[2026-07-28 16:53:11] [INF] [GET] /api/Employees -> HTTP GET /api/Employees responded 200 in 6.3616 ms

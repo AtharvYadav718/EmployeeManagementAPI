@@ -1,0 +1,3 @@
+[2026-08-28 12:45:44] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 200 | Time: 829 ms
+[2026-08-28 12:46:08] [WRN] Slow API | Method: GET | Path: /api/Employees/EmployeeAndDepartmentData | Status: 200 | Time: 105 ms
+[2026-08-28 12:46:18] [WRN] Slow API | Method: DELETE | Path: /api/Employees/20 | Status: 404 | Time: 46 ms

@@ -1,0 +1,8 @@
+[2026-10-12 12:37:36] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 401 | Time: 1531 ms
+[2026-10-12 12:37:45] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 401 | Time: 142 ms
+[2026-10-12 12:40:10] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 401 | Time: 274 ms
+[2026-10-12 12:40:32] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 401 | Time: 148 ms
+[2026-10-12 12:40:46] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 401 | Time: 155 ms
+[2026-10-12 12:41:02] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 401 | Time: 154 ms
+[2026-10-12 12:47:42] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 200 | Time: 221 ms
+[2026-10-12 12:48:08] [WRN] Slow API | Method: GET | Path: /api/Employees | Status: 200 | Time: 196 ms
