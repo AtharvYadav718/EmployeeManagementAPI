@@ -133,5 +133,30 @@ namespace EmployeeManagementApi.Repositories
                 return await db.QueryFirstOrDefaultAsync<string>(procedure, parameters, commandType: CommandType.StoredProcedure);
             }
         }
+
+        public async Task<IEnumerable<EmployeeSearchResponseDto>> SearchEmployeesByNameAsync(string name)
+        {
+            string procedure = "SP_SearchEmployeeByName";
+
+            var parameters = new
+            {
+                EmployeeName = name
+            };
+
+            using (IDbConnection db = new SqlConnection(_connectionString))
+            {
+                return await db.QueryAsync<EmployeeSearchResponseDto>(procedure, parameters, commandType: CommandType.StoredProcedure);
+            }
+        }
+
+        public async Task<IEnumerable<SearchByDeparmentIDResponceDto>> SearchByDeparmentIDAsync(int id)
+        {
+            string procedure = "SP_SearchByDeparmentID";
+
+            using (IDbConnection db = new SqlConnection(_connectionString))
+            {
+                return await db.QueryAsync<SearchByDeparmentIDResponceDto>(procedure, new { Id = id }, commandType: CommandType.StoredProcedure);
+            }
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace EmployeeManagementApi.Repositories.Interface
         Task<IEnumerable<EmployeeDetailsDto>> GetEmployeeDetailsWithJoinAsync();
         Task<IEnumerable<Employee>> GetEmployeesByDepartmentNameAsync(string departmentName);
         Task<string?> GetDepartmentNameByIdAsync(int departmentId);
-
-        Task<IEnumerable<Employee>> SearchEmployeesByNameAsync(string name);
+        Task<IEnumerable<EmployeeSearchResponseDto>> SearchEmployeesByNameAsync(string name);
+        Task<IEnumerable<SearchByDeparmentIDResponceDto>> SearchByDeparmentIDAsync(int id);
     }
 }

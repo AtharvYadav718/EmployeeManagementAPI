@@ -60,5 +60,15 @@ namespace EmployeeManagementApi.Services
         {
             return await _repository.GetDepartmentNameByIdAsync(departmentId);
         }
+
+        public async Task<IEnumerable<EmployeeSearchResponseDto>>SearchEmployeesByNameAsync(string name)
+        {
+            return await _repository.SearchEmployeesByNameAsync(name);
+        }
+
+        public async Task<IEnumerable<SearchByDeparmentIDResponceDto>> SearchByDeparmentIDAsync(int id)
+        {
+            return await _repository.SearchByDeparmentIDAsync(id);
+        }
     }
 }

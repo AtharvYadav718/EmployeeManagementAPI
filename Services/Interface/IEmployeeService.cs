@@ -23,5 +23,11 @@ namespace EmployeeManagementApi.Services.Interface
         Task<IEnumerable<Employee>> GetEmployeesByDepartmentNameAsync(string departmentName);
 
         Task<string?> GetDepartmentNameByIdAsync(int departmentId);
+
+        Task<IEnumerable<EmployeeSearchResponseDto>> SearchEmployeesByNameAsync(string name);
+
+        Task<IEnumerable<SearchByDeparmentIDResponceDto>> SearchByDeparmentIDAsync(int id);
+
+
     }
 }
