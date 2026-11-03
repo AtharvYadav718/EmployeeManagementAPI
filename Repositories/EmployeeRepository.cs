@@ -153,9 +153,14 @@ namespace EmployeeManagementApi.Repositories
         {
             string procedure = "SP_SearchByDeparmentID";
 
+            var parameters = new
+            {
+                Department_Id = id
+            };
+            
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
-                return await db.QueryAsync<SearchByDeparmentIDResponceDto>(procedure, new { Id = id }, commandType: CommandType.StoredProcedure);
+                return await db.QueryAsync<SearchByDeparmentIDResponceDto>(procedure, parameters,commandType: CommandType.StoredProcedure);
             }
         }
     }

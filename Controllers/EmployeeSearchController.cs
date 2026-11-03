@@ -66,7 +66,7 @@ namespace EmployeeManagementApi.Controllers
         }
 
 
-        [HttpGet("SearchByDeparmentID")]
+        [HttpGet("SearchByName")]
         public async Task<IActionResult> SearchEmployeesByName([FromQuery] string name)
         {
 
@@ -105,12 +105,12 @@ namespace EmployeeManagementApi.Controllers
         }
 
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> SearchByDeparmentID(int id)
+        [HttpGet("SearchByDeparmentID")]
+        public async Task<IActionResult> SearchByDeparmentID([FromQuery] int departmentId)
         {
-            if (id <= 0)
+            if (departmentId <= 0)
             {
-                _logger.LogWarning("Invalid Department ID provided: {DepartmentId}", id);
+                _logger.LogWarning("Invalid Department ID provided: {DepartmentId}", departmentId);
                 var errorResponse = new BaseResponse<IEnumerable<SearchByDeparmentIDResponceDto>>
                 {
                     Status = new BaseStatus
@@ -123,18 +123,19 @@ namespace EmployeeManagementApi.Controllers
                 return BadRequest(errorResponse);
             }
 
-            var employee = await _service.SearchByDeparmentIDAsync(id);
+            var employee = await _service.SearchByDeparmentIDAsync(departmentId);
 
-            if (!employee.Any())
+            if (employee == null || !employee.Any())
             {
-                _logger.LogWarning("Employee record not found for ID: {EmployeeId}", id);
+                _logger.LogWarning("No employees found for Department ID: {DepartmentId}", departmentId);
+
                 var errorResponse = new BaseResponse<IEnumerable<SearchByDeparmentIDResponceDto>>
                 {
                     Status = new BaseStatus
                     {
                         Success = false,
                         StatusCode = 404,
-                        Message = "No employeeDepartment data found."
+                        Message = "No employees found for the provided Department ID."
                     }
                 };
                 return NotFound(errorResponse);
@@ -146,7 +147,7 @@ namespace EmployeeManagementApi.Controllers
                 {
                     Success = true,
                     StatusCode = 200,
-                    Message = "EmployeeDepartment data fetched successfully."
+                    Message = "Employee data fetched successfully."
                 },
                 Data = new BaseData<IEnumerable<SearchByDeparmentIDResponceDto>>
                 {

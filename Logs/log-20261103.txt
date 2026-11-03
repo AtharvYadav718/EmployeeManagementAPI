@@ -1,0 +1,228 @@
+[2026-11-03 10:14:18] [ERR] [GET] /api/EmployeeSearch/1 -> HTTP GET /api/EmployeeSearch/1 responded 500 in 368.2967 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'SP_SearchByDeparmentID' expects parameter '@Department_Id', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at EmployeeManagementApi.Repositories.EmployeeRepository.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Repositories\EmployeeRepository.cs:line 158
+   at EmployeeManagementApi.Services.EmployeeService.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Services\EmployeeService.cs:line 71
+   at EmployeeManagementApi.Controllers.EmployeeSearchController.SearchByDeparmentID(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Controllers\EmployeeSearchController.cs:line 126
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EmployeeManagementApi.Middleware.SlowApiMiddleware.InvokeAsync(HttpContext context) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Middleware\SlowApiMiddleware.cs:line 22
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:eee5ecca-6445-45ee-9e52-900346a9598c
+Error Number:201,State:4,Class:16
+[2026-11-03 10:14:18] [ERR] [] /api/EmployeeSearch/1 -> Unhandled exception occurred while processing GET /api/EmployeeSearch/1
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'SP_SearchByDeparmentID' expects parameter '@Department_Id', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at EmployeeManagementApi.Repositories.EmployeeRepository.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Repositories\EmployeeRepository.cs:line 158
+   at EmployeeManagementApi.Services.EmployeeService.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Services\EmployeeService.cs:line 71
+   at EmployeeManagementApi.Controllers.EmployeeSearchController.SearchByDeparmentID(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Controllers\EmployeeSearchController.cs:line 126
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EmployeeManagementApi.Middleware.SlowApiMiddleware.InvokeAsync(HttpContext context) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Middleware\SlowApiMiddleware.cs:line 22
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at EmployeeManagementApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Middleware\ExceptionHandlingMiddleware.cs:line 22
+ClientConnectionId:eee5ecca-6445-45ee-9e52-900346a9598c
+Error Number:201,State:4,Class:16
+[2026-11-03 10:20:12] [ERR] [GET] /api/EmployeeSearch/SearchByDeparmentID102 -> HTTP GET /api/EmployeeSearch/SearchByDeparmentID102 responded 500 in 414.5289 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'SP_SearchByDeparmentID' expects parameter '@Department_Id', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at EmployeeManagementApi.Repositories.EmployeeRepository.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Repositories\EmployeeRepository.cs:line 158
+   at EmployeeManagementApi.Services.EmployeeService.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Services\EmployeeService.cs:line 71
+   at EmployeeManagementApi.Controllers.EmployeeSearchController.SearchByDeparmentID(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Controllers\EmployeeSearchController.cs:line 126
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EmployeeManagementApi.Middleware.SlowApiMiddleware.InvokeAsync(HttpContext context) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Middleware\SlowApiMiddleware.cs:line 22
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:501fee73-78af-4923-a139-7f21049d41e0
+Error Number:201,State:4,Class:16
+[2026-11-03 10:20:13] [ERR] [] /api/EmployeeSearch/SearchByDeparmentID102 -> Unhandled exception occurred while processing GET /api/EmployeeSearch/SearchByDeparmentID102
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'SP_SearchByDeparmentID' expects parameter '@Department_Id', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at EmployeeManagementApi.Repositories.EmployeeRepository.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Repositories\EmployeeRepository.cs:line 158
+   at EmployeeManagementApi.Services.EmployeeService.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Services\EmployeeService.cs:line 71
+   at EmployeeManagementApi.Controllers.EmployeeSearchController.SearchByDeparmentID(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Controllers\EmployeeSearchController.cs:line 126
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EmployeeManagementApi.Middleware.SlowApiMiddleware.InvokeAsync(HttpContext context) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Middleware\SlowApiMiddleware.cs:line 22
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at EmployeeManagementApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Middleware\ExceptionHandlingMiddleware.cs:line 22
+ClientConnectionId:501fee73-78af-4923-a139-7f21049d41e0
+Error Number:201,State:4,Class:16
+[2026-11-03 11:13:47] [ERR] [GET] /api/EmployeeSearch/SearchByDeparmentID -> HTTP GET /api/EmployeeSearch/SearchByDeparmentID responded 500 in 416.6301 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'SP_SearchByDeparmentID' expects parameter '@Department_Id', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at EmployeeManagementApi.Repositories.EmployeeRepository.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Repositories\EmployeeRepository.cs:line 158
+   at EmployeeManagementApi.Services.EmployeeService.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Services\EmployeeService.cs:line 71
+   at EmployeeManagementApi.Controllers.EmployeeSearchController.SearchByDeparmentID(Int32 departmentId) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Controllers\EmployeeSearchController.cs:line 126
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EmployeeManagementApi.Middleware.SlowApiMiddleware.InvokeAsync(HttpContext context) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Middleware\SlowApiMiddleware.cs:line 22
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:3edeb1e3-f33a-40b4-b041-02ddf3efda89
+Error Number:201,State:4,Class:16
+[2026-11-03 11:13:47] [ERR] [] /api/EmployeeSearch/SearchByDeparmentID -> Unhandled exception occurred while processing GET /api/EmployeeSearch/SearchByDeparmentID
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'SP_SearchByDeparmentID' expects parameter '@Department_Id', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at EmployeeManagementApi.Repositories.EmployeeRepository.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Repositories\EmployeeRepository.cs:line 158
+   at EmployeeManagementApi.Services.EmployeeService.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Services\EmployeeService.cs:line 71
+   at EmployeeManagementApi.Controllers.EmployeeSearchController.SearchByDeparmentID(Int32 departmentId) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Controllers\EmployeeSearchController.cs:line 126
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EmployeeManagementApi.Middleware.SlowApiMiddleware.InvokeAsync(HttpContext context) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Middleware\SlowApiMiddleware.cs:line 22
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at EmployeeManagementApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Middleware\ExceptionHandlingMiddleware.cs:line 22
+ClientConnectionId:3edeb1e3-f33a-40b4-b041-02ddf3efda89
+Error Number:201,State:4,Class:16
+[2026-11-03 11:35:31] [ERR] [GET] /api/EmployeeSearch/SearchByDeparmentID -> HTTP GET /api/EmployeeSearch/SearchByDeparmentID responded 500 in 93127.6323 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'SP_SearchByDeparmentID' expects parameter '@Department_Id', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at EmployeeManagementApi.Repositories.EmployeeRepository.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Repositories\EmployeeRepository.cs:line 158
+   at EmployeeManagementApi.Services.EmployeeService.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Services\EmployeeService.cs:line 71
+   at EmployeeManagementApi.Controllers.EmployeeSearchController.SearchByDeparmentID(Int32 departmentId) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Controllers\EmployeeSearchController.cs:line 126
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EmployeeManagementApi.Middleware.SlowApiMiddleware.InvokeAsync(HttpContext context) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Middleware\SlowApiMiddleware.cs:line 22
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:2570e1f6-80f2-4d75-a39d-091e403a2a78
+Error Number:201,State:4,Class:16
+[2026-11-03 11:35:43] [ERR] [] /api/EmployeeSearch/SearchByDeparmentID -> Unhandled exception occurred while processing GET /api/EmployeeSearch/SearchByDeparmentID
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'SP_SearchByDeparmentID' expects parameter '@Department_Id', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__270_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at EmployeeManagementApi.Repositories.EmployeeRepository.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Repositories\EmployeeRepository.cs:line 158
+   at EmployeeManagementApi.Services.EmployeeService.SearchByDeparmentIDAsync(Int32 id) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Services\EmployeeService.cs:line 71
+   at EmployeeManagementApi.Controllers.EmployeeSearchController.SearchByDeparmentID(Int32 departmentId) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Controllers\EmployeeSearchController.cs:line 126
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EmployeeManagementApi.Middleware.SlowApiMiddleware.InvokeAsync(HttpContext context) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Middleware\SlowApiMiddleware.cs:line 22
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at EmployeeManagementApi.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\atharvY\Downloads\EmployeeManagementApi (Dapper And SP)\EmployeeManagementApi\Middleware\ExceptionHandlingMiddleware.cs:line 22
+ClientConnectionId:2570e1f6-80f2-4d75-a39d-091e403a2a78
+Error Number:201,State:4,Class:16

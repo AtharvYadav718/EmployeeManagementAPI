@@ -1,0 +1,16 @@
+[2026-11-03 10:13:47] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 200 | Time: 3143 ms
+[2026-11-03 10:14:54] [WRN] Slow API | Method: GET | Path: /api/EmployeeSearch/SearchByDeparmentID | Status: 200 | Time: 51 ms
+[2026-11-03 10:15:34] [WRN] Slow API | Method: GET | Path: /api/EmployeeSearch/SearchByDeparmentID | Status: 200 | Time: 13 ms
+[2026-11-03 10:15:51] [WRN] Slow API | Method: GET | Path: /api/EmployeeSearch/EmployeeAndDepartmentData | Status: 200 | Time: 121 ms
+[2026-11-03 10:19:44] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 200 | Time: 2161 ms
+[2026-11-03 11:13:20] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 200 | Time: 3023 ms
+[2026-11-03 11:14:23] [WRN] Slow API | Method: GET | Path: /api/EmployeeSearch/SearchByName | Status: 200 | Time: 58 ms
+[2026-11-03 11:14:44] [WRN] Slow API | Method: GET | Path: /api/EmployeeSearch/EmployeeAndDepartmentData | Status: 200 | Time: 155 ms
+[2026-11-03 11:15:11] [WRN] Slow API | Method: GET | Path: /api/Employees/EmployeeDetailswithJoin | Status: 200 | Time: 61 ms
+[2026-11-03 11:15:41] [WRN] Slow API | Method: GET | Path: /api/Employees | Status: 200 | Time: 46 ms
+[2026-11-03 11:16:27] [WRN] Slow API | Method: GET | Path: /api/Departments/DepartmentWiseData | Status: 200 | Time: 51 ms
+[2026-11-03 11:24:48] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 200 | Time: 3151 ms
+[2026-11-03 11:29:16] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 200 | Time: 2175 ms
+[2026-11-03 11:32:59] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 200 | Time: 2208 ms
+[2026-11-03 11:42:13] [WRN] Slow API | Method: POST | Path: /api/Auth/Login | Status: 200 | Time: 2231 ms
+[2026-11-03 11:42:32] [WRN] Slow API | Method: GET | Path: /api/EmployeeSearch/SearchByDeparmentID | Status: 200 | Time: 248 ms
